@@ -1,0 +1,20 @@
+{
+  "name": "socido-tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "RS Solutions",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}
