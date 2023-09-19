@@ -241,18 +241,109 @@ img, video {
   --tw-backdrop-sepia: ;
 }
 
-.font-dm {
-  font-family: DM Sans, sans-serif;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+@media (width >= 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (width >= 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.font-dm {
+  font-family: DM Sans, sans-serif;
 }
 
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+@media (width >= 640px) {
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+}
+
+@media (width >= 1024px) {
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
 }
 
 /*# sourceMappingURL=index.61d3354a.css.map */
