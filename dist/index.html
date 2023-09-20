@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socido</title>
+    <title>Socido&trade;</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -17,9 +17,8 @@
       <div class="container relative bg-white">
         <div class="flex justify-between items-center py-6 px-4 lg:justify-start">
           <a href="#" class="mr-8">
-            <img src="/logo2.394a26fd.svg" alt="Logo firmy Socido" class="h-8 sm:h-10 w-auto">
+            <img src="/socido_logo_TM.a10b091f.png" alt="Logo firmy Socido" class="h-8 sm:h-10 w-auto">
           </a>
-
           <div class="lg:hidden">
             <button id="toggle-mobile" class="inline-flex items-center justify-center focus:outline-none">
               <i class="fas fa-bars text-xl text-purple-900 hover:text-gray-900"></i>
@@ -179,50 +178,63 @@
         </div>
       </div>
     </header>
+
+    <!--HERO SECTION-->
+    <section class="pt-10 md:pt-16 lg:pt-20 overflow-x-hidden">
+      <div class="container relative">
+        <img src="/Vector@2x.dbf265c9.svg" alt="Linie" class="absolute -right-24 md:-right-32 -top-24 md:-top-32">
+        <div class="flex flex-col items-center text-center">
+          <h1 class="text-2xl md:text-5xl font-bold">
+            Twoje centrum dowodzenia social media
+          </h1>
+          <p class="w-full md:w-7/12 mt-3 md:mt-5 sm:text-lg md:text-xl">
+            <b>SOCIDO</b>&trade; to kompletny zestaw narzędzi do on-line
+            marketingu. <br>Wyprzedź konkurencję dzięki zaawansowanej
+            analityce, automatyzacji zadań i innowacyjnej obsłudze klienta w
+            mediach społecznościowych.
+          </p>
+          <div class="my-5 sm:mt-20 sm:flex sm:justify-center w-full">
+            <div>
+              <a href="#" class="w-full inline-flex justify-center px-8 py-3 md:px-10 text-base md:text-lg rounded text-white bg-purple-900 hover:bg-gray-900 focus:outline-none">Rozpocznij za darmo</a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a href="#" class="w-full inline-flex justify-center px-8 py-3 md:px-10 text-base md:text-lg rounded text-purple-900 bg-purple-300 hover:bg-indigo-200 focus:outline-none">Dowiedz się więcej</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
 
-    <script data-parcel-key="ef44cf6bc273da78">
-      const menu = document.querySelector("#menu");
-      const menuMobile = document.querySelector("#menu-mobile");
+    <script>const menu = document.querySelector("#menu");
+const menuMobile = document.querySelector("#menu-mobile");
+// Funkcja pokazująca Menu
+const show = (e)=>{
+    return function() {
+        e.classList.add("flex");
+        e.classList.remove("hidden");
+    };
+};
+// Funkcja ukrywająca Menu
+const hide = (e)=>{
+    return function() {
+        e.classList.add("hidden");
+        e.classList.remove("flex");
+    };
+};
+// Funkcja odkrywająca / ukrywająca Menu po kliknięciu
+const openMenu = ()=>{
+    if (menu.classList.contains("hidden")) show(menu)();
+    else hide(menu)();
+};
+document.querySelector("#toggle-mobile").addEventListener("click", show(menuMobile));
+document.querySelector("#hide-menu").addEventListener("click", hide(menuMobile));
+document.querySelector("#toggle").addEventListener("click", openMenu);
+document.addEventListener("click", (event)=>{
+    if (event.target.parentNode.id !== "toggle") hide(menu)();
+});
 
-      // Funkcja pokazująca Menu
-      const show = (e) => {
-        return function () {
-          e.classList.add("flex");
-          e.classList.remove("hidden");
-        };
-      };
-
-      // Funkcja ukrywająca Menu
-      const hide = (e) => {
-        return function () {
-          e.classList.add("hidden");
-          e.classList.remove("flex");
-        };
-      };
-
-      // Funkcja odkrywająca / ukrywająca Menu po kliknięciu
-      const openMenu = () => {
-        if (menu.classList.contains("hidden")) {
-          show(menu)();
-        } else {
-          hide(menu)();
-        }
-      };
-
-      document
-        .querySelector("#toggle-mobile")
-        .addEventListener("click", show(menuMobile));
-      document
-        .querySelector("#hide-menu")
-        .addEventListener("click", hide(menuMobile));
-
-      document.querySelector("#toggle").addEventListener("click", openMenu);
-      document.addEventListener("click", (event) => {
-        if (event.target.parentNode.id !== "toggle") {
-          hide(menu)();
-        }
-      });
-    </script>
+</script>
   <script src="/Socido-TailwindCSS.59712999.js"></script></body>
 </html>
