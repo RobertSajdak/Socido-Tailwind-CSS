@@ -28,10 +28,66 @@
 
           <nav class="hidden lg:flex space-x-10">
             <div class="relative">
-              <button class="inline-flex items-center font-medium hover:text-purple-900 focus:outline-none">
+              <button id="toggle" class="inline-flex items-center font-medium hover:text-purple-900 focus:outline-none">
                 <span>Funkcje</span>
                 <i class="fas fa-chevron-down ml-1"></i>
               </button>
+
+              <div id="menu" class="hidden absolute z-20 mt-3 px-2 w-screen max-w-md sm:px-0 lg:left-1/2 transform lg:-translate-x-1/2">
+                <div class="rounded-lg shadow-lg ring-1 ring-gray-900 ring-opacity-5 overflow-hidden">
+                  <ul class="relative bg-white px-5 py-6 sm:p-8">
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="far fa-chart-bar text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Analityka</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem, ipsum dolor.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-tasks text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Zarządzanie</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit
+                            amet consectetur adipisicing.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-shield-alt text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Bezpieczeństwo</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-th-large text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Integracje</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Illum, quia libero.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <a href="#" class="font-medium hover:text-purple-900">Dla Twojej firmy</a>
@@ -46,6 +102,43 @@
         </div>
       </div>
     </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+
+    <script data-parcel-key="bf3db8140eba5a34">
+      const menu = document.querySelector("#menu");
+
+      // Funkcja pokazująca Menu
+      const show = (e) => {
+        return function () {
+          e.classList.add("flex");
+          e.classList.remove("hidden");
+        };
+      };
+
+      // Funkcja ukrywająca Menu
+      const hide = (e) => {
+        return function () {
+          e.classList.add("hidden");
+          e.classList.remove("flex");
+        };
+      };
+
+      // Funkcja odkrywająca / ukrywająca Menu po kliknięciu
+      const openMenu = () => {
+        if (menu.classList.contains("hidden")) {
+          show(menu)();
+        } else {
+          hide(menu)();
+        }
+      };
+
+      document.querySelector("#toggle").addEventListener("click", openMenu);
+
+      document.addEventListener("click", (event) => {
+        if (event.target.parentNode.id !== "toggle") {
+          hide(menu)();
+        }
+      });
+    </script>
   <script src="/Socido-TailwindCSS.59712999.js"></script></body>
 </html>
