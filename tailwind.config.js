@@ -30,7 +30,7 @@ module.exports = {
     },
     fontFamily: {
       dm: ["DM Sans", "sans-serif"],
-      architect: ["Architect Daughter", "cursive"],
+      pm: ["Permanent Marker", "cursive"],
     },
   },
   plugins: [],
