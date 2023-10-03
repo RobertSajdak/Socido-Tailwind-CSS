@@ -1,6 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
@@ -19,6 +20,7 @@ module.exports = {
         50: "12.5rem",
       },
     },
+
     container: {
       center: true,
       padding: {
@@ -28,11 +30,13 @@ module.exports = {
         xl: "2.5rem",
       },
     },
+
     fontFamily: {
       dm: ["DM Sans", "sans-serif"],
       pm: ["Permanent Marker", "cursive"],
       architects: ["Architects Daughter", "cursive"],
     },
   },
+
   plugins: [],
 };
