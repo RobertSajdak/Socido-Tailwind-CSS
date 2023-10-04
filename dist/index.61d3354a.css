@@ -388,6 +388,10 @@ img, video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-1 {
   margin-left: .25rem;
 }
@@ -480,6 +484,10 @@ img, video {
   height: 12rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -502,6 +510,10 @@ img, video {
 
 .w-50 {
   width: 12.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-8 {
@@ -996,6 +1008,14 @@ img, video {
 }
 
 @media (width >= 640px) {
+  .sm\:order-1 {
+    order: 1;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+
   .sm\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1207,6 +1227,10 @@ img, video {
 
   .lg\:mb-0 {
     margin-bottom: 0;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .lg\:ml-4 {
