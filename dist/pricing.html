@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socido&trade;</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/index.61d3354a.css">
+  </head>
+
+  <body class="font-dm text-gray-900">
+    <!-- HEADER -->
+    <header class="relative z-20">
+      <div class="container relative bg-white">
+        <div class="flex justify-between items-center py-6 px-4 lg:justify-start">
+          <a href="/index.html" class="mr-8">
+            <img src="/socido_logo_TM.a10b091f.png" alt="logo Socido" class="h-8 sm:h-10 w-auto">
+          </a>
+          <div class="lg:hidden">
+            <button id="toggle-mobile" class="inline-flex items-center justify-center focus:outline-none">
+              <i class="fas fa-bars text-xl text-purple-900 hover:text-gray-900"></i>
+            </button>
+          </div>
+
+          <nav class="hidden lg:flex space-x-10">
+            <div class="relative">
+              <button id="toggle" class="inline-flex items-center font-medium hover:text-purple-900 focus:outline-none">
+                <span>Funkcje</span>
+                <i class="fas fa-chevron-down ml-1"></i>
+              </button>
+
+              <div id="menu" class="hidden absolute z-20 mt-3 px-0 w-screen max-w-md sm:px-2 lg:left-1/2 transform lg:-translate-x-1/2">
+                <div class="rounded-lg shadow-lg ring-1 ring-gray-900 ring-opacity-5 overflow-hidden">
+                  <ul class="relative bg-white px-5 py-6 sm:p-8">
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="far fa-chart-bar text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Analityka</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem, ipsum dolor.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-tasks text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Zarządzanie</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit
+                            amet consectetur adipisicing.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-shield-alt text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Bezpieczeństwo</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="mb-2">
+                      <a href="#" class="p-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-th-large text-2xl text-purple-900"></i>
+                        <div class="ml-4">
+                          <p class="font-medium">Integracje</p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Illum, quia libero.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="font-medium hover:text-purple-900">Dla Twojej firmy</a>
+            <a href="#" class="font-medium hover:text-purple-900">Cennik</a>
+            <a href="#" class="font-medium hover:text-purple-900">O nas</a>
+          </nav>
+
+          <div class="hidden lg:flex lg:flex-1 items-center justify-end">
+            <a href="#" class="font-medium hover:text-purple-900">Zaloguj się</a>
+            <a href="#" class="ml-8 px-4 py-2 rounded shadow-sm font-medium text-white bg-purple-900 hover:bg-gray-900">Zarejestruj się</a>
+          </div>
+        </div>
+        <div id="menu-mobile" class="hidden absolute top-0 p-2 w-full z-20 inset-x-0">
+          <div class="rounded-lg shadow-lg ring-1 ring-gray-900 ring-opacity-5 bg-white divide-y-2 divide-gray-50 w-full">
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <img src="/logo2.394a26fd.svg" alt="logo Socido">
+                <button id="hide-menu" class="inline-flex items-center text-purple-900 focus:outline-none hover:text-gray-900">
+                  <i class="fas fa-times text-2xl"></i>
+                </button>
+              </div>
+
+              <div class="mt-6">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="#" class="py-3 flex items-center hover:bg-gray-50">
+                        <i class="far fa-chart-bar text-2xl text-purple-900"></i>
+                        <span class="ml-3 text-base font-medium">
+                          Analityka
+                        </span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="py-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-tasks text-2xl text-purple-900"></i>
+                        <span class="ml-3 text-base font-medium">
+                          Zarządzanie
+                        </span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="py-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-shield-alt text-2xl text-purple-900"></i>
+                        <span class="ml-3 text-base font-medium">
+                          Bezpieczeństwo
+                        </span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="py-3 flex items-center hover:bg-gray-50">
+                        <i class="fas fa-th-large text-2xl text-purple-900"></i>
+                        <span class="ml-3 text-base font-medium">
+                          Integracje
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="py-6 px-5 space-y-6">
+              <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                <a href="#" class="font-medium hover:text-gray-600">
+                  Funkcje
+                </a>
+
+                <a href="#" class="font-medium hover:text-gray-600">
+                  Dla Twojej firmy
+                </a>
+
+                <a href="#" class="font-medium hover:text-gray-600"> Cennik </a>
+
+                <a href="#" class="font-medium hover:text-gray-600"> O nas </a>
+              </div>
+              <div>
+                <a href="#" class="w-full inline-flex items-center justify-center px-4 py-2 rounded shadow-sm font-medium text-white bg-purple-900 hover:bg-gray-900 focus:outline-none">
+                  Zarejestruj się
+                </a>
+                <a href="#" class="w-full inline-flex items-center justify-center px-4 py-2 mt-2 font-medium hover:text-gray-600">
+                  Zaloguj się
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--FOOTER-->
+    <footer class="mt-8 md:mt-12 lg:mt-20">
+      <div class="container">
+        <div class="flex flex-wrap justify-between border-t border-gray-300 py-12 lg:py-20">
+          <div class="w-full lg:w-4/12 px-4">
+            <img src="/socido_logo_TM.a10b091f.png" alt="Socido logo" class="w-18 h-5">
+            <p class="text-base mt-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+              inventore voluptate mollitia nulla illo similique itaque adipisci
+              aliquid eveniet aspernatur.
+            </p>
+          </div>
+          <div class="w-full lg:w-8/12 xl:w-7/12 px-4">
+            <div class="flex flex-wrap justify-between xl:justify-end mb-6">
+              <div class="w-full md:w-4/12 xl:w-3/12 px-0 lg:px-4 pt-6 lg:pt-0">
+                <span class="block font-bold mb-3"> Funkcje </span>
+                <ul class="list-none">
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Analityka</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Social Media inbox</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Automatyzacja</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Raportowanie</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Publikacja</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-full md:w-4/12 xl:w-3/12 px-0 lg:px-4 pt-6 lg:pt-0">
+                <span class="block font-bold mb-3"> Dla Twojej firmy </span>
+                <ul class="list-none">
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">MSP</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">e-Commerce</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Agencja</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Enterprise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Influencerzy</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-full md:w-4/12 xl:w-3/12 px-0 lg:px-4 pt-6 lg:pt-0">
+                <span class="block font-bold mb-3"> Baza wiedzy </span>
+                <ul class="list-none">
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Centrum pomocy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Statystyki</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Regulamin</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-purple-900 hover:text-gray-900 pb-3 block">Polityka prywatności</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-8 lg:mb-16 flex flex-wrap items-center justify-between px-4">
+          <span class="order-2 sm:order-1 mt-3 sm:mt-0">&copy;2020 SOCIDO&TRADE; All rights reserved.</span>
+          <div class="flex items-center space-x-2 order-1 sm:order-2">
+            <a href="#" class="bg-purple-900 rounded-full w-6 h-6 text-white text-center">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="bg-purple-900 rounded-full w-6 h-6 text-white text-center">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="bg-purple-900 rounded-full w-6 h-6 text-white text-center">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="bg-purple-900 rounded-full w-6 h-6 text-white text-center">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="bg-purple-900 rounded-full w-6 h-6 text-white text-center">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+
+    <script>AOS.init({
+    delay: 200,
+    duration: 1200,
+    once: true
+});
+
+</script>
+
+    <script src="/index.f68744d1.js"></script>
+  <script src="/pricing.da508220.js"></script></body>
+</html>
