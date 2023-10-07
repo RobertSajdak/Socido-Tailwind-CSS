@@ -1,0 +1,3 @@
+const e=document.querySelector("#menu"),t=document.querySelector("#menu-mobile"),c=e=>function(){e.classList.add("flex"),e.classList.remove("hidden")},n=e=>function(){e.classList.add("hidden"),e.classList.remove("flex")};document.querySelector("#toggle-mobile").addEventListener("click",c(t)),document.querySelector("#hide-menu").addEventListener("click",n(t)),document.querySelector("#toggle").addEventListener("click",()=>{e.classList.contains("hidden")?c(e)():n(e)()}),document.addEventListener("click",t=>{"toggle"!==t.target.parentNode.id&&n(e)()});//# sourceMappingURL=index.07a3fd35.js.map
+
+//# sourceMappingURL=index.07a3fd35.js.map
