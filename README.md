@@ -32,17 +32,17 @@ To run this project, start it in root directory using:
 
 Example screenshots:
 
-![Example screenshot](./img/screenshots/1_start_webside.png)
-![Example screenshot](./img/screenshots/2_start_webside.png)
-![Example screenshot](./img/screenshots/3_start_webside.png)
-![Example screenshot](./img/screenshots/4_start_webside.png)
-![Example screenshot](./img/screenshots/5_start_webside_dropdown_list.png)
-![Example screenshot](./img/screenshots/6_start_webside_mobile_menu.png)
-![Example screenshot](./img/screenshots/7_start_webside_mobile_menu_drop-down.png)
-![Example screenshot](./img/screenshots/8_price-list.png)
-![Example screenshot](./img/screenshots/9_price-list_FAQ.png)
-![Example screenshot](./img/screenshots/10_price-list_opinions_testing.png)
-![Example screenshot](./img/screenshots/11_price-list_testing_footer.png)
+![Example screenshot](./src/img/screenshots/1_start_webside.png)
+![Example screenshot](./src/img/screenshots/2_start_webside.png)
+![Example screenshot](./src/img/screenshots/3_start_webside.png)
+![Example screenshot](./src/img/screenshots/4_start_webside.png)
+![Example screenshot](./src/img/screenshots/5_start_webside_dropdown_list.png)
+![Example screenshot](./src/img/screenshots/6_start_webside_mobile_menu.png)
+![Example screenshot](./src/img/screenshots/7_start_webside_mobile_menu_drop-down.png)
+![Example screenshot](./src/img/screenshots/8_price-list.png)
+![Example screenshot](./src/img/screenshots/9_price-list_FAQ.png)
+![Example screenshot](./src/img/screenshots/10_price-list_opinions_testing.png)
+![Example screenshot](./src/img/screenshots/11_price-list_testing_footer.png)
 
 ## Features
 
@@ -51,3 +51,5 @@ Example screenshots:
 - Using Tailwind CSS classes.
 - JS scripts.
 - Use of graphics and photos.
+
+[def]: ./src/img/screenshots/3_start_webside.png
