@@ -677,7 +677,14 @@
             </p>
           </div>
           <div class="w-full md:w-1/2 lg:w-8/12 xl:w-1/2">
-            <form class="w-full h-full flex flex-col lg:flex-row justify-end">
+            <form
+              class="w-full h-full flex flex-col lg:flex-row justify-end"
+              name="newsletter"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="newsletter" value="newsletter" />
               <input
                 type="email"
                 name="e-mail"
@@ -688,7 +695,7 @@
               <input
                 type="submit"
                 value="Subskrybuj"
-                class="mt-4 lg:mt-0 lg:ml-4 px-4 py-3 rounded shadow-sm font-medium text-purple-900 bg-white hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                class="z-10 mt-4 lg:mt-0 lg:ml-4 px-4 py-3 rounded shadow-sm font-medium text-purple-900 bg-white hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-400"
               />
             </form>
           </div>
